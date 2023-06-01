@@ -40,6 +40,10 @@ body{
         width: 60px;
         height: 60px;
         cursor: pointer;
+        img{
+            height: 2rem;
+            width: 2rem;
+        }
     }
 }
 .details{
@@ -50,13 +54,23 @@ body{
     margin-top: 50px;
 
 }
-/* .weather{ 
+.weather{ 
     display: none;
-} */
+}
 .error{
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+.weather-icon{
+    height: 8rem;
+    width: 8rem;
+}
+.col{
+    img{
+        height: 4rem;
+        width: 4rem; 
+    }
 }

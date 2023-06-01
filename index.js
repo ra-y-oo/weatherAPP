@@ -1,5 +1,5 @@
 const apiKey = "4e063aed9dd36c8e1effe4b37e7e13e6";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&=&units=metric&q=germany";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&=&units=metric&q=";
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon")
@@ -33,7 +33,7 @@ async function checkweather(city){
         weatherIcon.src = "images/drizzle.png";
     }
 
-    document.querySelector(".weather").getElementsByClassName.display = "block";
+    document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none"
 }
 

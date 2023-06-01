@@ -45,6 +45,10 @@ body {
   height: 60px;
   cursor: pointer;
 }
+.search button img {
+  height: 2rem;
+  width: 2rem;
+}
 
 .details {
   display: flex;
@@ -54,13 +58,24 @@ body {
   margin-top: 50px;
 }
 
-/* .weather{ 
-    display: none;
-} */
+.weather {
+  display: none;
+}
+
 .error {
   text-align: left;
   margin-left: 10px;
   font-size: 14px;
   margin-top: 10px;
   display: none;
+}
+
+.weather-icon {
+  height: 8rem;
+  width: 8rem;
+}
+
+.col img {
+  height: 4rem;
+  width: 4rem;
 }/*# sourceMappingURL=style.css.map */
