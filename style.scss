@@ -1,14 +1,11 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Varela Round', sans-serif;
     box-sizing: border-box;
-}
-body{
-    background: #222;
 }
 .card{
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, hsl(197, 100%, 85%), hsl(218, 100%, 75%));
+    background: rgba(171, 199, 255, 0.5);
     color: #FFF;
     margin:  100px auto 0;
     border-radius:  20px;
@@ -16,29 +13,31 @@ body{
     text-align: center;
 }
 .search{
-    width: 100%;
+    max-width: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px auto;
     input{
         border: 0;
         outline: 0;
-        background: #EBFFFC;
-        color: #555;
+        background: rgba(255, 255, 255, 0.5);
+        color: #3b3b3b;
         padding: 10px 25px;
-        height: 60px;
-        border-radius: 30px;
+        height: 3.75rem;
+        border-radius: 2rem;
         flex: 1;
-        margin-right: 18px;
-        font-size: 18px;
+        font-size: 1.2rem;
     }
     button{
-        border: 0;
-        outline: 0;
-        background: #EBFFFC;
+        margin-left: 1rem;
+        border: none;
+        height: max-content;
+        width: fit-content;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
+        background: rgba(235, 255, 252, 0.5);
+
         cursor: pointer;
         img{
             height: 2rem;
@@ -64,6 +63,7 @@ body{
     display: none;
 }
 .weather-icon{
+    margin-top: 10px;
     height: 8rem;
     width: 8rem;
 }
@@ -71,5 +71,16 @@ body{
     img{
         height: 4rem;
         width: 4rem; 
+    }
+}
+@media (max-width: 768px) {
+    .search{
+        flex-direction: column;
+        justify-content: flex-start;
+        button{
+            margin-top: 4px;
+            width: 100%;
+            border-radius: 6px;
+        }
     }
 }
